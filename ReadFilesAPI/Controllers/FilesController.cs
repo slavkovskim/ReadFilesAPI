@@ -42,17 +42,6 @@ namespace ReadFilesAPI.Controllers
 
             return File(stream, Type, FileName);
         }
-        /*
-                [HttpGet("txt-stream")]
-                public IActionResult ReturnTxtStream()
-                {
-                    //     var stream = new MemoryStream(Convert.FromBase64String());
-                    FileStream fs = new FileStream(Server.MapPath("TextFile.txt"), FileMode.Open);
-                    byte[] data = new byte[fs.Length];
-                    fs.Read(data, 0, (int)fs.Length);
-                    fs.Close();
-                    return File(stream, Txt, Txtname);
-    }         */
 
 
         //Shows list of files
